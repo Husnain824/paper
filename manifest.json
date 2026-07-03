@@ -1,0 +1,70 @@
+{
+  "name": "IlmAI — Pakistan's AI Study Platform",
+  "short_name": "IlmAI",
+  "description": "AI-powered MCQs, Notes, Past Papers & AI Chat for Pakistan students (Class 9-12)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030c1e",
+  "theme_color": "#00D4AA",
+  "orientation": "portrait-primary",
+  "lang": "ur",
+  "dir": "ltr",
+  "categories": ["education"],
+  "icons": [
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "MCQ Practice",
+      "short_name": "MCQs",
+      "description": "AI MCQ Practice karo",
+      "url": "/?mode=mcq",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "AI Chat",
+      "short_name": "Chat",
+      "description": "AI Tutor se baat karo",
+      "url": "/?mode=chat",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "IlmAI Home Screen"
+    }
+  ]
+}

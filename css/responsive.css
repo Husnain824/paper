@@ -1,0 +1,208 @@
+/* ═══════════════════════════════════════════════
+   IlmAI — Responsive Stylesheet
+   Mobile-first breakpoints
+   ═══════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════
+   TABLET — max-width: 900px
+   ══════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .feat-row { grid-template-columns: repeat(2, 1fr); }
+  .mode-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE LANDSCAPE / SMALL TABLET — max-width: 768px
+   ══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .hdr-in { padding: 0 14px; gap: 10px; }
+  .logo-bx { display: none; }
+
+  .g3 { grid-template-columns: repeat(2, 1fr); }
+  .cls-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .boards { grid-template-columns: 1fr; }
+  .brand-grid,
+  .brd-c { gap: 10px; }
+
+  .pw, .pw-sm { padding: 24px 16px 100px; }
+
+  .hero { padding: 40px 16px 30px; }
+  .hero-h { font-size: clamp(28px, 8vw, 44px); }
+  .hero-p { font-size: 15px; margin-bottom: 28px; }
+
+  .feat-row { grid-template-columns: 1fr; gap: 12px; margin-top: 36px; }
+
+  .stat-row { gap: 16px; }
+  .stat-num { font-size: 22px; }
+
+  .qq { padding: 16px; font-size: 16px; }
+  .qopts { gap: 8px; }
+  .qopt { padding: 12px 14px; }
+
+  .mcq-quiz .opts,
+  .qopts { grid-template-columns: 1fr; }
+
+  .res-sc { font-size: 56px; }
+  .res-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+
+  .aisel { flex-direction: column; align-items: stretch; }
+  .aisel select { width: 100%; }
+
+  /* Footer stacks */
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE — max-width: 640px
+   ══════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  html { font-size: 15px; }
+
+  #hdr { height: 56px; }
+  .hdr-in { gap: 8px; }
+  .logo-nm { font-size: 16px; }
+  .logo-ic { width: 30px; height: 30px; font-size: 15px; }
+
+  .bc { font-size: 12px; }
+  .bc-i { padding: 3px 8px; }
+
+  .hdr-r { gap: 5px; }
+  .spl { padding: 5px 9px; font-size: 11px; gap: 3px; }
+  .spl span.txt { display: none; }
+
+  .g3 { grid-template-columns: 1fr; }
+  .mode-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .mode-c { padding: 20px 12px; }
+  .mode-em { font-size: 30px; margin-bottom: 8px; }
+  .mode-nm { font-size: 14px; }
+  .mode-ds { font-size: 11px; }
+
+  .ga { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+  .qhdr { gap: 8px; }
+  .qtimer { font-size: 16px; padding: 7px 14px; min-width: 64px; }
+
+  .qnav { flex-direction: column-reverse; align-items: stretch; }
+  .qnav .btn { width: 100%; }
+
+  .tg { gap: 6px; }
+  .tb { padding: 8px 14px; font-size: 13px; }
+
+  .btn-lg { padding: 13px 24px; font-size: 15px; }
+
+  /* Chat widget mobile sizing */
+  #cw { bottom: 14px; right: 14px; }
+  #ctog { width: 48px; height: 48px; font-size: 19px; }
+  #cpanel {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    bottom: 60px;
+    right: 0;
+    max-height: 70vh;
+  }
+
+  .ocr-box { padding: 18px; }
+
+  /* Full test result grid */
+  .res-stats { grid-template-columns: 1fr; }
+
+  /* Footer full stack */
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; text-align: left; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ══════════════════════════════════════════════
+   SMALL MOBILE — max-width: 480px
+   ══════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .hdr-r .spl:not(.always-show) { display: none; }
+  .h1 { font-size: 22px; }
+  .hero-h { font-size: 26px; }
+  .hero-badge { font-size: 12px; padding: 6px 14px; }
+
+  .cls-grid { gap: 8px; }
+  .clc { padding: 20px 10px; }
+  .clc-ic { font-size: 28px; }
+  .clc-nm { font-size: 16px; }
+  .clc-ds { font-size: 10px; }
+
+  .sub-c { padding: 16px 10px; }
+  .sub-ic { font-size: 26px; }
+  .sub-nm { font-size: 13px; }
+
+  .brd-c { padding: 12px 14px; gap: 10px; }
+  .brd-logo { width: 44px; height: 44px; font-size: 18px; }
+  .brd-inf h3 { font-size: 13px; }
+  .brd-inf p { font-size: 10px; }
+
+  .qexp { padding: 12px 14px; font-size: 13px; }
+
+  .aiev { padding: 14px; }
+  .aiev-sc { font-size: 22px; }
+
+  .sumb, .gp-sec { padding: 16px; }
+
+  .cft { padding: 8px 10px; gap: 6px; }
+  #cinp { font-size: 13px; padding: 8px 11px; }
+  #cimg-btn, #csnd { width: 34px; height: 34px; font-size: 14px; }
+}
+
+/* ══════════════════════════════════════════════
+   EXTRA SMALL — max-width: 380px
+   ══════════════════════════════════════════════ */
+@media (max-width: 380px) {
+  .mode-grid { grid-template-columns: 1fr; }
+  .cls-grid { grid-template-columns: 1fr; }
+  .ga { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════
+   FULLSCREEN CHAT — all breakpoints
+   ══════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  #cpanel.fullscreen {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   TOUCH DEVICE OPTIMIZATIONS
+   ══════════════════════════════════════════════ */
+@media (hover: none) and (pointer: coarse) {
+  .clc:hover,
+  .grp-c:hover,
+  .sub-c:hover,
+  .mode-c:hover,
+  .brd-c:hover,
+  .ch-it:hover {
+    transform: none;
+  }
+  .btn, .tb, .qopt, .clc, .mode-c { min-height: 44px; }
+}
+
+/* ══════════════════════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   LARGE DESKTOP — min-width: 1400px
+   ══════════════════════════════════════════════ */
+@media (min-width: 1400px) {
+  .pw, .hdr-in, .footer-inner, .footer-bottom { max-width: 1280px; }
+}
